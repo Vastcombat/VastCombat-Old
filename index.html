@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- Game Meta Information -->
+    <!-- Replace, paste, and edit meta src code from https://funxtime.ml/ -->
+    <title>VastCombat.io</title>
+
+    <!-- CSS/External Library Links -->
+  </head>
+
+  <body id="lobby-homepage" class="lobby-homepage">
+    <div id="dark-wrapper" class="dark-wrapper" style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.5); color: white;">
+    </div>
+
+    <script type="text/javascript">
+      if ( window.location.hostname != vastcombatConfig.hostname.primary ) {
+        vastcombat("forbidden");
+      } else if ( window.location.hostname != vastcombatConfig.hostname.alias.replit ) {
+        vastcombat("forbidden");
+      } else if ( window.location.hostname != vastcombatConfig.hostname.alias.netlify ) {
+        vastcombat("forbidden");
+      }
+    </script>
+  </body>
+</html>
