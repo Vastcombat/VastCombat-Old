@@ -20,7 +20,8 @@ const vastcombatConfig = {
       replit: "vastcombat.repl.co",
       replit_long: "vastcombat.vastcombat.repl.co",
       replit_longid: "1f905ab8-987e-48e5-b2f9-d178499ba21a.id.repl.co",
-      netlify: "vastcombat.netlify.app"
+      netlify: "vastcombat.netlify.app",
+      testServer: "testing.vastcombat.cf"
     }
   },
   documentObjectModel: {
