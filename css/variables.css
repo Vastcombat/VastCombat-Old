@@ -1,0 +1,17 @@
+:root {
+  --colorScheme_lightest: #ffffaa;
+  --colorScheme_lighter: #fffaaa;
+  --colorScheme_light: #fff000;
+  --colorScheme_default: #aaa000;
+  --colorScheme_dark: #777000;
+  --colorScheme_darker: #555000;
+  --colorScheme_darkest: #333000;
+
+  --fontSize_largest: 64px;
+  --fontSize_larger: 48px;
+  --fontSize_large: 32px;
+  --fontSize_default: 16px;
+  --fontSize_small: 12px;
+  --fontSize_smaller: 8px;
+  --fontSize_smallest: 4px;
+}
