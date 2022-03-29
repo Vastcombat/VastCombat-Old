@@ -1,7 +1,7 @@
 const vastcombatConfig = {
   appName: "VastCombat.io",
   appVersion: "0.0.0",
-  developers: ["Fun X Time", "EAZY BLACK", "Ibrahim"],
+  developers: ["Fun X Time", "EAZY BLACK", "Chicc", "Ibrahim"],
   artists: ["Fun X Time"],
   musicArtists: [null],
   startupConsoleLogsEnabled: true,
@@ -25,6 +25,6 @@ const vastcombatConfig = {
     }
   },
   documentObjectModel: {
-    titleText: "VastCombat.io"
+    lobbyTitle: "VastCombat.io"
   }
 }

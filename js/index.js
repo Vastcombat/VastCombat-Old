@@ -1,6 +1,6 @@
 function vastcombat(arg1) {
   if (arg1 == "onPageLoad") {
-    document.getElementById("lobby-homepage-title").innerHTML = vastcombatConfig.
+    document.getElementById("lobby-homepage-title").innerHTML = vastcombatConfig.documentObjectModel.lobbyTitle;
   } else if (arg1 == "closePopup") {
     document.getElementById("popup").style.display = "none";
     return "vastcombat.popup_closed";

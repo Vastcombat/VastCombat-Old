@@ -2,9 +2,14 @@
   font-family: Fredoka One;
   font-size: var(--fontSize_default);
   color: white;
+  text-align: center;
 }
 body {
   background-color: var(--colorScheme_darker);
+  animation-name: vastcombat_animation_darker-dark;
+  animation-duration: 2500ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
 #popup {
   background-color: var(--colorScheme_darkest);
@@ -26,7 +31,6 @@ body {
   font-size: var(--fontSize_larger);
   margin-left: -50px;
   margin-right: -50px;
-  text-align: center;
 }
 #popup .popup-description {
   background-color: var(--colorScheme_darker);
@@ -35,7 +39,6 @@ body {
   padding: 50px;
   margin-left: -50px;
   margin-right: -50px;
-  text-align: center;
 }
 #popup .popup-buttons {
   background-color: var(--colorScheme_darkest);
@@ -44,7 +47,6 @@ body {
   padding: 50px;
   margin-left: -50px;
   margin-right: -50px;
-  text-align: center;
 }
 #popup .popup-buttons .popup-button {
   margin-left: auto;

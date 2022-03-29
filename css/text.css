@@ -1,0 +1,18 @@
+h1 {
+  font-size: var(--fontSize_largest);
+}
+h2 {
+  font-size: var(--fontSize_larger);
+}
+h3 {
+  font-size: var(--fontSize_large);
+}
+h4 {
+  font-size: var(--fontSize_default);
+}
+h5 {
+  font-size: var(--fontSize_small);
+}
+h6 {
+  font-size: var(--fontSize_smaller);
+}

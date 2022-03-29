@@ -1,0 +1,4 @@
+@keyframes vastcombat_animation_darker-dark {
+  from { background-color: var(--colorScheme_darker) }
+  to { background-color: var(--colorScheme_dark) }
+}
