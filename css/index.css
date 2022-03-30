@@ -11,9 +11,22 @@ body {
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
 }
+input[type="text"] {
+  background-color: var(--colorScheme_unique_orange);
+  color: white;
+  border: none;
+  border-radius: var(--defaultBorderRadius);
+  padding: 20px;
+  border-bottom-color: var(--colorScheme_unique_orange_dark);
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
+}
+input::placeholder {
+  color: white;
+}
 #popup {
   background-color: var(--colorScheme_darkest);
-  border-radius: 5px;
+  border-radius: var(--defaultBorderRadius);;
   width: 20%;
   height: 20%;
   padding: 50px;

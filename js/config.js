@@ -25,6 +25,7 @@ const vastcombatConfig = {
     }
   },
   documentObjectModel: {
-    lobbyTitle: "VastCombat.io"
+    lobbyTitle: "VastCombat.io",
+    playButtonText: "PLAY!"
   }
 }

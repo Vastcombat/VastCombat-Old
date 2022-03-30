@@ -7,6 +7,13 @@
   --colorScheme_darker: #555000;
   --colorScheme_darkest: #333000;
 
+  --defaultBorderRadius: 7.5px;
+
+  --colorScheme_unique_pink: #aa1775;
+  --colorScheme_unique_green: #05aa2a;
+  --colorScheme_unique_orange: #ffa000;
+  --colorScheme_unique_orange_dark: #9b6100;
+
   --fontSize_largest: 64px;
   --fontSize_larger: 48px;
   --fontSize_large: 32px;
