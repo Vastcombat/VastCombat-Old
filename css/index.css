@@ -3,6 +3,7 @@
   font-size: var(--fontSize_default);
   color: white;
   text-align: center;
+  outline: none;
 }
 body {
   background-color: var(--colorScheme_darker);
@@ -15,18 +16,26 @@ input[type="text"] {
   background-color: var(--colorScheme_unique_orange);
   color: white;
   border: none;
-  border-radius: var(--defaultBorderRadius);
+  border-radius: var(--borderRadius_default);
   padding: 20px;
   border-bottom-color: var(--colorScheme_unique_orange_dark);
   border-bottom-style: solid;
   border-bottom-width: 10px;
+  transition: font-size 1s, border-radius 1s;
+}
+input[type="text"]:hover {
+  font-size: calc(var(--fontSize_default) * 1.25);
+  border-radius: var(--borderRadius_high);
+}
+input[type="text"]:active, input[type="text"]:focus {
+  font-size: calc(var(--fontSize_default) * 1.5);
 }
 input::placeholder {
   color: white;
 }
 #popup {
   background-color: var(--colorScheme_darkest);
-  border-radius: var(--defaultBorderRadius);;
+  border-radius: var(--borderRadius_default);
   width: 20%;
   height: 20%;
   padding: 50px;

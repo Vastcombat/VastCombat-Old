@@ -7,7 +7,9 @@
   --colorScheme_darker: #555000;
   --colorScheme_darkest: #333000;
 
-  --defaultBorderRadius: 7.5px;
+  --borderRadius_low: 2.5px;
+  --borderRadius_default: 7.5px;
+  --borderRadius_high: 20px;
 
   --colorScheme_unique_pink: #aa1775;
   --colorScheme_unique_green: #05aa2a;

@@ -1,5 +1,5 @@
 // Custom Popup Function
-function vastcombat_createPopup(title, description, buttonEnabled, buttonText, actionOnClick, showOnCreation) {
+function vastcombat_createPopup(title, description, buttonEnabled, buttonText, actionOnClick, showOnCreation, arg1) {
   document.getElementsByClassName("popup-heading")[0].innerHTML = title;
   document.getElementsByClassName("popup-description")[0].innerHTML = description;
   if (buttonEnabled == true || buttonEnabled == "true") {
@@ -11,6 +11,8 @@ function vastcombat_createPopup(title, description, buttonEnabled, buttonText, a
   }
   if (actionOnClick == "reload") {
     document.getElementsByClassName("popup-button")[0].setAttribute("onclick", "window.location.reload()");
+  } else if (actionOnClick == "function") {
+    arg1;
   }
   return "vastcombat.popup_created";
 }

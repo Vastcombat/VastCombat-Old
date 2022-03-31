@@ -26,6 +26,7 @@ const vastcombatConfig = {
   },
   documentObjectModel: {
     lobbyTitle: "VastCombat.io",
-    playButtonText: "PLAY!"
+    playButtonText: "PLAY!",
+    loadSuccessText: "Successfully loaded!"
   }
 }

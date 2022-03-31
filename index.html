@@ -23,8 +23,8 @@
     <title>VastCombat.io</title>
 
     <!-- External CSS/JS/Library Connections -->
-    <link rel="icon" type="image/gif" href="/favicons/favicon.gif">
-    <link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+    <link rel="icon" type="image/gif" href="/assets/images/favicons/favicon.gif">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicons/favicon.ico">
     <link href="/css/index.css" rel="stylesheet" type="text/css" />
     <link href="/css/imports.css" rel="stylesheet" type="text/css" />
     <link href="/css/variables.css" rel="stylesheet" type="text/css" />
@@ -44,9 +44,10 @@
     <h1 id="lobby-homepage-title">Loading...</h1>
     <br>
     <form id="playerInfo">
-      <input type="text" id="playerName" maxlength="16" placeholder="Pick a name!"></input>
-      <input type="submit" id="playButton" value="Loading..."></input>
+      <input type="text" id="playerNameInput" maxlength="16" placeholder="Pick a name!" tabindex="1" autofocus accesskey="n"></input>
+      <input type="submit" id="playButton" value="Loading..." tabindex="2" accesskey="p"></input>
     </form>
+    <p id="logInformation1" vastcombat="logger_green" vastcombatAnimation="fadeAndHide">Loading the page, one second...</p>
 
     <div id="popup" class="popup">
       <div class="popup-heading">

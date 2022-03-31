@@ -2,11 +2,11 @@ button, [type="submit"] {
   background-color: var(--colorScheme_default);
   padding: 20px;
   border: none;
-  border-radius: var(--defaultBorderRadius);;
+  border-radius: var(--borderRadius_default);
   border-bottom-color: var(--colorScheme_light);
   border-bottom-style: solid;
   border-bottom-width: 10px;
-  transition: background-color 1s, border-bottom-color 1s;
+  transition: background-color 1s, border-bottom-color 1s, border-radius 1s;
 }
 button:hover, [type="submit"]:hover {
   background-color: var(--colorScheme_dark);
@@ -14,6 +14,7 @@ button:hover, [type="submit"]:hover {
 }
 button:active, button:focus, [type="submit"]:active, [type="submit"]:focus {
   background-color: var(--colorScheme_darker);
+  border-radius: var(--borderRadius_high);
   border-bottom-color: var(--colorScheme_darkest);
 }
 button[vastcombat="button_pink"] {
