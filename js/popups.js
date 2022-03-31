@@ -3,7 +3,11 @@ function vastcombat_createPopup(title, description, buttonEnabled, buttonText, a
   document.getElementsByClassName("popup-heading")[0].innerHTML = title;
   document.getElementsByClassName("popup-description")[0].innerHTML = description;
   if (buttonEnabled == true || buttonEnabled == "true") {
-    document.getElementsByClassName("popup-button")[0].innerHTML = buttonText;
+    document.getElementsByClassName("popup-button")[0].style.display = "inline-block";
+    document.getElementsByClassName("popup-button")[0].innerHTML = buttonText; 
+  }
+  if (buttonEnabled == false || buttonEnabled == "false") {
+    document.getElementsByClassName("popup-button")[0].style.display = "none";
   }
   if (showOnCreation == true || showOnCreation == "true") {
     document.getElementById("popup").style.display = "block";

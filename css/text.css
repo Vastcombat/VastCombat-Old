@@ -16,3 +16,6 @@ h5 {
 h6 {
   font-size: var(--fontSize_smaller);
 }
+[vastcombat="logger_green"] {
+  color: var(--colorScheme_unique_green_lighter);
+}

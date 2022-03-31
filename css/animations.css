@@ -5,16 +5,16 @@
   animation-iteration-count: 1;
 }
 @keyframes vastcombat_animation_fadeAndHide {
-  10% { opacity: 90%; }
-  20% { opacity: 80%; }
-  30% { opacity: 70%; }
-  40% { opacity: 60%; }
-  50% { opacity: 50%; }
-  60% { opacity: 40%; }
-  70% { opacity: 30%; }
-  80% { opacity: 20%; }
-  90% { opacity: 10%; }
-  100% { display: none; opacity: 100%; }
+  10% { display: inline; opacity: 90%; }
+  20% { display: inline; opacity: 80%; }
+  30% { display: inline; opacity: 70%; }
+  40% { display: inline; opacity: 60%; }
+  50% { display: inline; opacity: 50%; }
+  60% { display: inline; opacity: 40%; }
+  70% { display: inline; opacity: 30%; }
+  80% { display: inline; opacity: 20%; }
+  90% { display: inline; opacity: 10%; }
+  100% { display: inline; opacity: 0.1%; }
 }
 @keyframes vastcombat_animation_darker-dark {
   from { background-color: var(--colorScheme_darker) }

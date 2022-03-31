@@ -12,9 +12,19 @@
   --borderRadius_high: 20px;
 
   --colorScheme_unique_pink: #aa1775;
+  --colorScheme_unique_green_lightest: #81fc9c;
+  --colorScheme_unique_green_lighter: #38fa64;
+  --colorScheme_unique_green_light: #05dc35;
   --colorScheme_unique_green: #05aa2a;
   --colorScheme_unique_orange: #ffa000;
   --colorScheme_unique_orange_dark: #9b6100;
+  --colorScheme_unique_blue_lightest: #a8deff;
+  --colorScheme_unique_blue_lighter: #79cdff;
+  --colorScheme_unique_blue_light: #40b8ff;
+  --colorScheme_unique_blue: #00a1ff;
+  --colorScheme_unique_blue_dark: #0088d9;
+  --colorScheme_unique_blue_darker: #006dae;
+  --colorScheme_unique_blue_darkest: #00639d;
 
   --fontSize_largest: 64px;
   --fontSize_larger: 48px;

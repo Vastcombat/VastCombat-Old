@@ -30,3 +30,21 @@ button[vastcombat="button_green"] {
 button[vastcombat="button_orange"] {
   background-color: var(--colorScheme_unique_green);
 }
+select {
+  background-color: var(--colorScheme_unique_orange);
+  color: white;
+  border: none;
+  border-radius: var(--borderRadius_default);
+  padding: 20px;
+  border-bottom-color: var(--colorScheme_unique_orange_dark);
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
+  transition: font-size 1s, border-radius 1s;
+}
+select:hover {
+  font-size: calc(var(--fontSize_default) * 1.25);
+  border-radius: var(--borderRadius_high);
+}
+select:active, select:focus {
+  font-size: calc(var(--fontSize_default) * 1.5);
+}

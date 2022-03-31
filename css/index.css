@@ -12,6 +12,10 @@ body {
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
 }
+::selection {
+  background-color: var(--colorScheme_unique_blue_darker);
+  color: var(--colorScheme_unique_blue_lighter);
+}
 input[type="text"] {
   background-color: var(--colorScheme_unique_orange);
   color: white;
@@ -34,6 +38,7 @@ input::placeholder {
   color: white;
 }
 #popup {
+  position: absolute;
   background-color: var(--colorScheme_darkest);
   border-radius: var(--borderRadius_default);
   width: 20%;
@@ -43,6 +48,8 @@ input::placeholder {
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
+  left: 40%;
+  right: 40%;
   display: none;
 }
 #popup .popup-heading {

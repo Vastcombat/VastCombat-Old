@@ -2,6 +2,7 @@ function vastcombat(arg1) {
   if (arg1 == "onPageLoad") {
     document.getElementById("lobby-homepage-title").innerHTML = vastcombatConfig.documentObjectModel.lobbyTitle;
     document.getElementById("playButton").setAttribute("value", vastcombatConfig.documentObjectModel.playButtonText);
+    document.getElementById('logInformation1').innerHTML = vastcombatConfig.documentObjectModel.loadSuccessText;
   } else if (arg1 == "closePopup") {
     document.getElementById("popup").style.display = "none";
     return "vastcombat.popup_closed";
@@ -22,6 +23,8 @@ setInterval(function() {
     console.log("%c Please refrain from pasting ANYTHING here as an attacker might be trying to harm you and/or the game! So for your own good, don't do anything like that!", vastcombatConfig.consoleLogStyles.default);
   }
 }, vastcombatConfig.startupConsoleLogsRepeatInterval);
-
-document.getElementById('logInformation1').innerHTML = vastcombatConfig.documentObjectModel.loadSuccessText;
-setTimeout(function() { document.getElementById('logInformation1').style.display = "none" }, 5000);
+const consoleWarnings = setTimeout(function() { document.getElementById('logInformation1').style.display = "none"; }, 5000);
+function disableCnslWarnings() {
+  clearInterval(consoleWarnings);
+  return ;
+}
