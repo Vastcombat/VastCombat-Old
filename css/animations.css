@@ -1,7 +1,7 @@
 [vastcombatAnimation="fadeAndHide"] {
   animation-name: vastcombat_animation_fadeAndHide;
-  animation-delay: 2.5s;
-  animation-duration: 2.5s;
+  animation-delay: 1.25s;
+  animation-duration: 1.25s;
   animation-iteration-count: 1;
 }
 @keyframes vastcombat_animation_fadeAndHide {

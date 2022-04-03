@@ -48,3 +48,6 @@ select:hover {
 select:active, select:focus {
   font-size: calc(var(--fontSize_default) * 1.5);
 }
+select option:hover, select option:active, select option:focus {
+  background-color: var(--colorScheme_unique_orange_dark);
+}

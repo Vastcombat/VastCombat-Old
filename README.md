@@ -43,3 +43,9 @@ This index will cover our folders. It is more convinient to check our replit roo
 **Darker:** `#555000`
 
 **Darkest:** `#333000`
+
+## Game Design
+For game design related stuff, please check `/css/variables.css` to see variables set related to our game design.
+
+## Which language(s) are/is used to make our game?
+Our game is an HTML, CSS, and JavaScript (JS) game. We will ONLY be using these languages for the game. We will also be using Node.js for hosting the game as a multiplayer game. We will be coding in [phaser.js](https://phaser.io)!

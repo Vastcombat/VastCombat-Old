@@ -7,7 +7,7 @@ const vastcombatConfig = {
   startupConsoleLogsEnabled: true,
   startupConsoleLogsRepeatInterval: 5000,
   consoleLogStyles: {
-    larger: "font-size: 48px; color: #aaa000; font-family: Passion One;",
+    larger: "font-size: 48px; color: #aaa000;",
     large: "font-size: 32px; color: #777000;",
     default: "font-size: 16px; color: #555000;",
   },
