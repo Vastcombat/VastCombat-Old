@@ -1,0 +1,32 @@
+{
+  "lang": "en",
+  "name": "VastCombat.io",
+  "short_name": "VastCombat",
+  "icons": [{
+        "src": "/assets/images/icons/vastcombat-16x16.ico",
+        "sizes": "16x16",
+        "type": "image/x-icon"
+      }, {
+        "src": "/assets/images/icons/vastcombat-32x32",
+        "sizes": "32x32"
+      }, {
+        "src": "/assets/images/icons/vastcombat-64x64",
+        "sizes": "64x64",
+      }],
+  "splash_screens": [{
+        "src": "/assets/images/logos/",
+        "sizes": "320x240"
+      }, {
+        "src": "splash/hd_small",
+        "sizes": "1334x750"
+      }, {
+        "src": "splash/hd_hi",
+        "sizes": "1920x1080",
+      }],
+  "scope": "/",
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "theme_color": "#aaa000",
+  "background_color": "#aaa000"
+}

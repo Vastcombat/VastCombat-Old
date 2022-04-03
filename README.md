@@ -16,7 +16,7 @@ This index will cover our folders. It is more convinient to check our replit roo
     > Contains audio which plays in the background.
     - `/assets/audio/effects` _(Folder)_
     > Contains audio effects, such as mining stone, etc.
-  - `/assets/images/favicons` _(Folder)_
+  - `/assets/images/icons` _(Folder)_
   > Site icons with different dimensions and/or formats.
   - `/assets/images/game` _(Folder)_
   > Contains in-game assets.
