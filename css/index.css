@@ -35,7 +35,7 @@ input[type="text"]:active, input[type="text"]:focus {
   font-size: calc(var(--fontSize_default) * 1.5);
 }
 input::placeholder {
-  color: white;
+  color: rgba(255, 255, 255, 0.75);
 }
 #popup {
   position: absolute;
@@ -79,3 +79,19 @@ input::placeholder {
 #popup .popup-closeBtn {
   float: right;
 }
+#settings {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 20px;
+  width: 25%;
+  height: 25%;
+  display: none;
+  background-color: var(--colorScheme_darkest);
+  color: white;
+  border-radius: 10px;
+  animation-name: vastcombat_animation_dark-darker;
+  animation-duration: 2500ms;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+} 

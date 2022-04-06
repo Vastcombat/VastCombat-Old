@@ -26,7 +26,7 @@ pattern = "**/*.html"
     attributeDefaultValue = "doublequotes"
   
     [languages.html.languageServer.configuration.html.format]
-    enable = true
+    enable = true 
     wrapLineLength = 120
     unformatted = "wbr"
     contentUnformatted = "pre,code,textarea"
@@ -167,3 +167,4 @@ pattern = "**/{*.js,*.jsx,*.ts,*.tsx,*.mjs,*.cjs}"
 #       float = "ignore"
 #       idSelector = "ignore"
 #       unknownAtRules = "warning"
+# o(≧口≦)o(╬▔皿▔)╯（︶^︶）ヽ（≧□≦）ノ(* ￣︿￣)（︶^︶）（︶^︶）(╬▔皿▔)╯(* ￣︿￣)┳━┳ ノ( ゜-゜ノ)┳━┳ ノ( ゜-゜ノ)(ヘ･_･)ヘ┳━┳o(一︿一+)oo(一︿一+)o(╯°□°）╯︵ ┻━┻o(一︿一+)o:-P:P;)^_^:-P;P:-DU_UU_U(∪.∪ )...zzz(∪.∪ )...zzzo(*￣▽￣*)ブ(*￣3￣)╭(ToT)/~~~(∪.∪ )...zzz(¬‿¬)(¬‿¬)(¬‿¬)☜(ﾟヮﾟ☜)(☞ﾟヮﾟ)☞(#_<-)(#_<-)(#｀-_ゝ-){{{(>_<)}}}(っ °Д °;)っ（；´д｀）ゞ╰（‵□′）╯(～￣(OO)￣)ブ（︶^︶）___*( ￣皿￣)/#____o((⊙﹏⊙))o.o((⊙﹏⊙))o.o((⊙﹏⊙))o.‹©©®℗©®℗®®™©®℗™

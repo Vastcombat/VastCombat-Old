@@ -12,5 +12,5 @@ function dev() {
   }
 }
 if (localStorage.getItem("vastcombat_experimentalMode") == true) {
-  console.log("Dev time!");
+  console.log("Experimental time!");
 }

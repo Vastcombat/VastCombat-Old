@@ -1,5 +1,10 @@
 function vastcombat(arg1) {
   if (arg1 == "onPageLoad") {
+    if (localStorage.vastcombat_playerName) {
+      document.getElementById("playerNameInput").value = localStorage.vastcombat_playerName;
+    } else {
+      localStorage.vastcombat_playerName = "";
+    }
     document.getElementById("lobby-homepage-title").innerHTML = vastcombatConfig.documentObjectModel.lobbyTitle;
     document.getElementById("playButton").setAttribute("value", vastcombatConfig.documentObjectModel.playButtonText);
     document.getElementById('logInformation1').innerHTML = vastcombatConfig.documentObjectModel.loadSuccessText;
@@ -13,7 +18,7 @@ function vastcombat(arg1) {
     document.getElementById("lobby-homepage").innerHTML = "Nice try.";
     return "vastcombat.hostnameForbidden";
   } else {
-    console.log("vastcombat(arg1): Parameter 'arg1' was provided invalid, input was: " + arg1);
+    console.error("vastcombat(arg1): Parameter 'arg1' was provided invalid, input was: " + arg1);
   }
 }
 if ( window.location.hostname != vastcombatConfig.hostname.primary && window.location.hostname != vastcombatConfig.hostname.alias.replit && window.location.hostname != vastcombatConfig.hostname.alias.replit_long && window.location.hostname != vastcombatConfig.hostname.alias.replit_longid && window.location.hostname != vastcombatConfig.hostname.alias.netlify && window.location.hostname != vastcombatConfig.hostname.alias.testServer ) { 
@@ -38,3 +43,10 @@ function playerNameChange() {
   const playerNameInput = document.getElementById("playerNameInput");
   localStorage.setItem("vastcombat_playerName", playerNameInput.value);
 }
+
+function serverChange() {
+  const serverUserInput = document.getElementById("serverPicker");
+  localStorage.setItem("vastcombat_playerServer", serverUserInput.selectedIndex);
+}
+
+// document.getElementById("serverPicker").selectedIndex = localStorage.getItem("vastcombat_playerServer");

@@ -7,10 +7,10 @@
         "sizes": "16x16",
         "type": "image/x-icon"
       }, {
-        "src": "/assets/images/icons/vastcombat-32x32",
+        "src": "/assets/images/icons/vastcombat-32x32.ico",
         "sizes": "32x32"
       }, {
-        "src": "/assets/images/icons/vastcombat-64x64",
+        "src": "/assets/images/icons/vastcombat-64x64.ico",
         "sizes": "64x64",
       }],
   "splash_screens": [{

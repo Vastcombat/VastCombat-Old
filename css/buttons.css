@@ -51,3 +51,12 @@ select:active, select:focus {
 select option:hover, select option:active, select option:focus {
   background-color: var(--colorScheme_unique_orange_dark);
 }
+#settingsButton {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-radius: var(--borderRadius_maximum);
+}
+#closeSettingsButton {
+  float: right;
+}

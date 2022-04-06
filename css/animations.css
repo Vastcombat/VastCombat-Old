@@ -20,3 +20,7 @@
   from { background-color: var(--colorScheme_darker) }
   to { background-color: var(--colorScheme_dark) }
 }
+@keyframes vastcombat_animation_dark-darker {
+  from { background-color: var(--colorScheme_dark); }
+  to { background-color: var(--colorScheme_darker); }
+}

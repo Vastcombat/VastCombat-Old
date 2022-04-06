@@ -10,8 +10,9 @@
   --borderRadius_low: 2.5px;
   --borderRadius_default: 7.5px;
   --borderRadius_high: 20px;
+  --borderRadius_maximum: 1000px;
 
-  --colorScheme_unique_pink: #aa1775;
+  --colorScheme_unique_pink: #ff00a1;
   --colorScheme_unique_green_lightest: #81fc9c;
   --colorScheme_unique_green_lighter: #38fa64;
   --colorScheme_unique_green_light: #05dc35;
