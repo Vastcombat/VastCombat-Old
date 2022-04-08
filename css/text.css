@@ -19,7 +19,7 @@ h6 {
 [vastcombat="logger_green"] {
   color: var(--colorScheme_unique_green_lighter);
 }
-[vastcombat="infoText"], [vastcombat="infoTextWithPointer"] {
+[vastcombat="infoText"], [vastcombat="infoTextWithPointer"], .infoText, .infoTextWithPointer {
   background-color: transparent;
   border: none;
   animation: none;
