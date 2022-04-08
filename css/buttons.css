@@ -63,3 +63,13 @@ select option:hover, select option:active, select option:focus {
   right: 20px;
   border-radius: var(--borderRadius_maximum);
 }
+[vastcombat="infoText"], [vastcombat="infoTextWithPointer"], .infoText, .infoTextWithPointer {
+  background-color: transparent;
+  border: none;
+  animation: none;
+  color: #b0b0b0;
+  font-size: var(--fontSize_small);
+}
+[vastcombat="infoTextWithPointer"] {
+  cursor: pointer;
+}
