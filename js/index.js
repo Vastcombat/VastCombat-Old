@@ -49,4 +49,8 @@ function serverChange() {
   localStorage.setItem("vastcombat_playerServer", serverUserInput.selectedIndex);
 }
 
+function vastcombat_blur(elementID, rate) {
+  document.getElementById(elementID).style.filter = "blur(" + rate + ")";
+}
+
 // document.getElementById("serverPicker").selectedIndex = localStorage.getItem("vastcombat_playerServer");

@@ -19,3 +19,16 @@ h6 {
 [vastcombat="logger_green"] {
   color: var(--colorScheme_unique_green_lighter);
 }
+[vastcombat="infoText"], [vastcombat="infoTextWithPointer"] {
+  background-color: transparent;
+  border: none;
+  animation: none;
+  color: #b0b0b0;
+  font-size: var(--fontSize_small);
+}
+[vastcombat="infoTextWithPointer"] {
+  cursor: pointer;
+}
+#lobby-homepage-title {
+  transition: filter 1s;
+}

@@ -59,4 +59,7 @@ select option:hover, select option:active, select option:focus {
 }
 #closeSettingsButton {
   float: right;
+  bottom: 20px;
+  right: 20px;
+  border-radius: var(--borderRadius_maximum);
 }
