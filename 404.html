@@ -27,12 +27,15 @@
 
   <body>
     <h1>Failed to find that!</h1>
-    <p>We couldn't find that page you tried to visit! Does that link even exist?
+    <p id="message">We couldn't find <span id="request">that page</span> you tried to visit! Does that link even exist?
     <br>
     Instead of wasting time here at a page which makes no sense, why not go and <a href="/">play</a>?</p>
     <br>
     <script>
-      
+      if (window.location.pathname != "/404.html" || window.location.pathname != "/404" || window.location.pathname != "/404.htm") {
+        document.getElementById("request").innerHTML = window.location.pathname;
+        document.getElementById("request").style.fontWeight = "bolder";
+      }
     </script>
   </body>
 </html>

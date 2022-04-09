@@ -16,3 +16,55 @@ function vastcombat_settingsMenu(arg1, arg2) {
   }
   return "vastcombat.settingsMenuCallbackReceived";
 }
+var fullScreenElem = document.documentElement;
+var isFullScreen = false;
+
+function vastcombat_toggleFullscreen() {
+  if (isFullScreen == false) {
+    if (fullScreenElem.requestFullscreen) {
+      fullScreenElem.requestFullscreen();
+      isFullScreen = true;
+    } else if (fullScreenElem.webkitRequestFullscreen) { /* Safari */
+      fullScreenElem.webkitRequestFullscreen();
+      isFullScreen = true;
+    } else if (fullScreenElem.msRequestFullscreen) { /* IE11 */
+      fullScreenElem.msRequestFullscreen();
+      isFullScreen = true;
+    }
+    isFullScreen = true;
+  } else if (isFullScreen == true) {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) { /* Safari */
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* IE11 */
+      document.msExitFullscreen();
+    }
+    isFullScreen = false;
+  } else {
+    console.error("Variable \"isFullScreen\" carries a value which is not a boolean.");
+  }
+}
+
+function vastcombat_openFullscreen() {
+  if (fullScreenElem.requestFullscreen) {
+    fullScreenElem.requestFullscreen();
+    isFullScreen = true;
+  } else if (fullScreenElem.webkitRequestFullscreen) { /* Safari */
+    fullScreenElem.webkitRequestFullscreen();
+    isFullScreen = true;
+  } else if (fullScreenElem.msRequestFullscreen) { /* IE11 */
+    fullScreenElem.msRequestFullscreen();
+    isFullScreen = true;
+  }
+}
+
+function vastcombat_closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) { /* Safari */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE11 */
+    document.msExitFullscreen();
+  }
+}

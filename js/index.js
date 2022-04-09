@@ -1,4 +1,4 @@
-function vastcombat(arg1) {
+function vastcombat(arg1, arg2) {
   if (arg1 == "onPageLoad") {
     if (localStorage.vastcombat_playerName) {
       document.getElementById("playerNameInput").value = localStorage.vastcombat_playerName;
@@ -52,5 +52,3 @@ function serverChange() {
 function vastcombat_blur(elementID, rate) {
   document.getElementById(elementID).style.filter = "blur(" + rate + ")";
 }
-
-// document.getElementById("serverPicker").selectedIndex = localStorage.getItem("vastcombat_playerServer");
