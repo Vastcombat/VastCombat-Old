@@ -4,6 +4,17 @@
   <head>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@900&family=Poppins&family=Roboto&display=swap');
+      * {
+        font-family: Poppins;
+        font-size: 7.5px;
+        color: white;
+        text-align: center;
+        outline: none;
+      }
+      ::selection {
+        background-color: #006dae;
+        color: #79cdff;
+      }
       body {
         background-color: #333000;
         color: white;
@@ -36,6 +47,7 @@
         document.getElementById("request").innerHTML = window.location.pathname;
         document.getElementById("request").style.fontWeight = "bolder";
       }
+
     </script>
   </body>
 </html>
