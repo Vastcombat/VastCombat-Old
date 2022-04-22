@@ -35,6 +35,7 @@
     <link href="/css/animations.css" rel="stylesheet" type="text/css" />
     <link href="/css/buttons.css" rel="stylesheet" type="text/css" />
     <link href="/css/text.css" rel="stylesheet" type="text/css" />
+    <script src="/js/audio.js"></script>
     <script src="/js/config.js"></script>
     <script src="/js/index.js"></script>
     <script src="/js/popups.js"></script>
@@ -51,7 +52,7 @@
     <h1 id="lobby-homepage-title">Loading...</h1>
     <br>
     <form id="playerInfo">
-      <input type="text" id="playerNameInput" maxlength="16" placeholder="Pick a name!" title="Pick a nickname of your choice! Just make sure it doesn't exceed 16 characters." onchange="playerNameChange()" tabindex="1" autofocus accesskey="n"></input>
+      <input type="text" id="playerNameInput" maxlength="16" placeholder="Pick a name!" title="Pick a nickname of your choice! Just make sure it doesn't exceed 16 characters." onchange="playerNameChange()" tabindex="1" autofocus accesskey="n" onkeypress="playVastAudio('key_press')"></input>
       <br>
       <br>
       <select id="serverPicker" onchange="serverChange()" tabindex="2" accesskey="s" title="Consider picking your nearest server if you don't want lag to be your shadow.">
@@ -87,5 +88,10 @@
       <button class="settingOptionButton" onclick="vastcombat_toggleFullscreen()">Toggle Fullscreen</button>
     <button id="closeSettingsButton" onclick="vastcombat_settingsMenu('close')"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg></button>
     </div>
+
+    <audio id="vastAudio-lobby" autoplay loop> <source src="/audio/lobby.mp3" type="audio/mp3"></source> </audio>
+    <audio id="vastAudio-button_click"> <source src="/audio/button_click.wav" type="audio/wav"></source> </audio>
+    <audio id="vastAudio-key_press"> <source src="/audio/key_press.wav" type="audio/wav"></source> </audio>
+    
   </body>
 </html>

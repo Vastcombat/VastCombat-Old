@@ -1,4 +1,5 @@
 const experimentalEnabled = true;
+const isSiteRestricted = true;
 
 function dev() {
   if (window.location.hostname == vastcombatConfig.hostname.alias.testServer) {
@@ -9,6 +10,11 @@ function dev() {
     }
   } else {
     localStorage.setItem("vastcombat_experimentalMode", false);
+  }
+
+  if (isSiteRestricted == true) {
+    document.getElementById("lobby-homepage").innerHTML = "Site is locked for players, for now...";
+      location.replace("https://vastcombat.cf/locked.html");
   }
 }
 if (localStorage.getItem("vastcombat_experimentalMode") == true) {

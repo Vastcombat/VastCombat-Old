@@ -3,11 +3,13 @@ function vastcombat_settingsMenu(arg1, arg2) {
 
     document.getElementById("settingsButton").style.display = "none";
     document.getElementById("settings").style.display = "block";
+    playVastAudio('button_click');
 
   } else if (arg1 == "close") {
 
     document.getElementById("settings").style.display = "none";
     document.getElementById("settingsButton").style.display = "block";
+    playVastAudio('button_click');
 
   } else {
 
@@ -20,6 +22,7 @@ var fullScreenElem = document.documentElement;
 var isFullScreen = false;
 
 function vastcombat_toggleFullscreen() {
+  playVastAudio('button_click');
   if (isFullScreen == false) {
     if (fullScreenElem.requestFullscreen) {
       fullScreenElem.requestFullscreen();

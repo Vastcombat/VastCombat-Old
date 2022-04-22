@@ -32,12 +32,8 @@ setInterval(function() {
     console.log("%c Please refrain from pasting ANYTHING here as an attacker might be trying to harm you and/or the game! So for your own good, don't do anything like that!", vastcombatConfig.consoleLogStyles.default);
   }
 }, vastcombatConfig.startupConsoleLogsRepeatInterval);
-const consoleWarnings = setTimeout(function() { document.getElementById('logInformation1').style.display = "none"; }, 2500);
 
-function disableCnslWarnings() {
-  clearInterval(consoleWarnings);
-  return "consoleWarnings.disabled";
-}
+setTimeout(function() { document.getElementById('logInformation1').setAttribute("style", "display: none"); }, 1250);
 
 function playerNameChange() {
   const playerNameInput = document.getElementById("playerNameInput");
@@ -47,8 +43,13 @@ function playerNameChange() {
 function serverChange() {
   const serverUserInput = document.getElementById("serverPicker");
   localStorage.setItem("vastcombat_playerServer", serverUserInput.selectedIndex);
+  playVastAudio("button_click");
 }
 
 function vastcombat_blur(elementID, rate) {
   document.getElementById(elementID).style.filter = "blur(" + rate + ")";
+}
+
+function fuzzyPlayerInfo() {
+  document.getElementById("playerInfo").innerHTML = 'My name is <input type="text" id="playerNameInput" maxlength="16" placeholder="Pick a name!" title="Pick a nickname of your choice! Just make sure it doesn\'t exceed 16 characters." onchange="playerNameChange()" tabindex="1" autofocus accesskey="n" onkeypress="playVastAudio(\'key_press\')" style="height:16px"></input>I want to play in the \'<select id="serverPicker" onchange="serverChange()" tabindex="2" accesskey="s" title="Consider picking your nearest server if you don\'t want lag to be your shadow." style="height:69px"><option value="as">Asia</option><option value="eu">Europe</option><option value="na">North America</option></select>\' server. So let us now <input type="submit" id="playButton" value="Play" tabindex="3" accesskey="p"></input>!';
 }
