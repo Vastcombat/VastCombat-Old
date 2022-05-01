@@ -1,4 +1,6 @@
 const vastAudio = {
+  musicVolume: 50,
+
   lobby: document.getElementById("vastAudio-lobby"),
   input: {
     onkeypress: document.getElementById("vastAudio-key_press")
@@ -23,8 +25,12 @@ function playVastAudio(filename) {
   }
 }
 
-document.onload = playVastAudio("lobby");
-setInterval(function() {
-  lobbyVolume = document.getElementById("vastAudio-lobby").volume;
-  document.getElementById("vastAudio-lobby").volume = lobbyVolume + 0.05;
-}, 100)
+function vastAudio_updateMusicVolume() {
+  localStorage.setItem("vastaudio_musicVolume", vastAudio.musicVolume);
+  document.getElementById("vastAudio-lobby").volume = localStorage.getItem("vastaudio_musicVolume") / 100;
+}
+
+document.onload = function() {
+  playVastAudio("lobby");
+  document.getElementById("vastAudio-lobby").volume = localStorage.getItem("vastaudio_musicVolume") / 100;
+};

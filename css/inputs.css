@@ -1,0 +1,107 @@
+button, [type="submit"] {
+  background-color: var(--colorScheme_default);
+  padding: 20px;
+  border: none;
+  border-radius: var(--borderRadius_default);
+  border-bottom-color: var(--colorScheme_light);
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
+  transition: background-color 1s, border-bottom-color 1s, border-radius 1s;
+}
+button:hover, [type="submit"]:hover {
+  background-color: var(--colorScheme_dark);
+  border-bottom-color: var(--colorScheme_default);
+}
+button:active, button:focus, [type="submit"]:active, [type="submit"]:focus {
+  background-color: var(--colorScheme_darker);
+  border-radius: var(--borderRadius_high);
+  border-bottom-color: var(--colorScheme_darkest);
+}
+button[vastcombat="button_pink"] {
+  background-color: var(--colorScheme_unique_pink);
+  border-bottom-color: var(--colorScheme_unique_pink_light);
+}
+button[vastcombat="button_pink"]:hover {
+  background-color: var(--colorScheme_unique_pink);
+}
+button[vastcombat="button_green"] {
+  background-color: var(--colorScheme_unique_green);
+}
+button[vastcombat="button_orange"] {
+  background-color: var(--colorScheme_unique_green);
+}
+select {
+  background-color: var(--colorScheme_unique_orange);
+  color: white;
+  border: none;
+  border-radius: var(--borderRadius_default);
+  padding: 20px;
+  border-bottom-color: var(--colorScheme_unique_orange_dark);
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
+  transition: font-size 1s, border-radius 1s;
+}
+select:hover {
+  font-size: calc(var(--fontSize_default) * 1.25);
+  border-radius: var(--borderRadius_high);
+}
+select:active, select:focus {
+  font-size: calc(var(--fontSize_default) * 1.5);
+}
+select option:hover, select option:active, select option:focus {
+  background-color: var(--colorScheme_unique_orange_dark);
+}
+#settingsButton {
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  border-radius: var(--borderRadius_maximum);
+}
+#closeSettingsButton {
+  float: right;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  border-radius: var(--borderRadius_maximum);
+}
+[vastcombat="infoText"], [vastcombat="infoTextWithPointer"], .infoText, .infoTextWithPointer {
+  background-color: transparent;
+  border: none;
+  animation: none;
+  color: #b0b0b0;
+  font-size: var(--fontSize_small);
+}
+[vastcombat="infoTextWithPointer"] {
+  cursor: pointer;
+}
+.slidecontainer {
+  width: 100%;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: var(--colorScheme_unique_orange);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: var(--borderRadius_maximum);
+}
+.slider:hover {
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: var(--colorScheme_unique_brown);
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: var(--colorScheme_unique_brown);
+  cursor: pointer;
+}

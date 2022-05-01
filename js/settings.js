@@ -71,3 +71,8 @@ function vastcombat_closeFullscreen() {
     document.msExitFullscreen();
   }
 }
+
+function vastAudio_musicRange_change() {
+  vastAudio.musicVolume = document.getElementById("vastAudio_range-music").value;
+  vastAudio_updateMusicVolume();
+}
