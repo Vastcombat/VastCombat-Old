@@ -47,6 +47,21 @@
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3632322158566911"
      crossorigin="anonymous"></script>
+
+    <!-- OneSignal Web Push Notifications -->
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      window.OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "8785a82b-1464-44fa-b09b-18250f1d598e",
+          safari_web_id: "",
+          notifyButton: {
+            enable: true,
+          },
+        });
+      });
+</script>
   </head>
 
   <body id="lobby-homepage" class="lobby-homepage" onload="vastcombat('onPageLoad')" onblur="vastcombat_blur('lobby-homepage-title', '5px')" onfocus="vastcombat_blur('lobby-homepage-title', '0')">

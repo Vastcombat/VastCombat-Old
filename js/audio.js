@@ -31,6 +31,7 @@ function vastAudio_updateMusicVolume() {
 }
 
 document.onload = function() {
+  if (localStorage.vastaudio_musicVolume) { localStorage.setItem("vastaudio_musicVolume", 50) }
   playVastAudio("lobby");
   document.getElementById("vastAudio-lobby").volume = localStorage.getItem("vastaudio_musicVolume") / 100;
 };

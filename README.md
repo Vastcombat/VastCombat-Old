@@ -1,3 +1,7 @@
+**Official VastCombat.io Account:** [@VastCombat](https://replit.com/@vastcombat/) - We recommend not sharing this.
+
+**Lead Developer:** [@FunXTime](https://replit.com/@FunXTime/)
+
 
 # VastCombat.io!
 This is the place where the developers, including you, can create this _.io_ game!
@@ -43,6 +47,8 @@ This index will cover our folders. It is more convinient to check our replit roo
 **Darker:** `#555000`
 
 **Darkest:** `#333000`
+
+> Refer to [/css/variables.css](https://replit.com/@vastcombat/VastCombat#css/variables.css)
 
 ## Game Design
 For game design related stuff, please check `/css/variables.css` to see variables set related to our game design.
